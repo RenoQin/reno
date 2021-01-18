@@ -1,0 +1,130 @@
+#! / usr / bin / python
+######################
+# http://fb.com/reno.bekasie
+######################
+mess  =  "" "============================================= =========
+             Deface Script Creator        
+                        RENO
+================================================== ==== "" "
+
+ kekacauan cetak
+cetak  "RENO QIN"
+title  =  raw_input ( "Judul judul:" )
+heading  =  raw_input ( "Diretas oleh:" )
+imagelink  =  raw_input ( "gambar tautan (tengah):" )
+bgimage  =  raw_input ( "gambar tautan (latar belakang):" )
+message  =  raw_input ( "Pesan. gunakan kode <br> untuk teks selanjutnya!:" )
+textcolor  =  raw_input ( "Teks warna (contoh = hijau):" )
+youtubeid  =  raw_input ( "youtube kode (MUSIK):" )
+
+
+#Buka indeks
+fo  =  open ( "script.html" , "w" )
+
+messagescript1  =  "" "<html> <head> <title>" ""
+
+messagescript2  =  judul
+
+messagescript3  =  "" "</title> </head>
+<body>
+<br>
+<link href = 'http: //fonts.googleapis.com/css? family = Orbitron: 700' rel = 'stylesheet' type = 'text / css'>
+<link href = 'http: //fonts.googleapis.com/css? family = Anton' rel = 'stylesheet' type = 'text / css'>
+<link href = 'http: //fonts.googleapis.com/css? family = Josefin Sans' rel = 'stylesheet' type = 'text / css'>
+<body bgcolor = "# 000000" background = "" "
+
+messagescript4  =  bgimage
+
+messagescript5  =  "" "> <div class = 'CenterDiv'>
+<center>
+<h1> <center> <font color = \ " red \" face = Orbitron> "" "
+
+messagescript6  =  judul
+
+messagescript7  =  "" "<h1> </font>
+<img src = "" " 
+
+messagescript8  =  imagelink
+
+messagescript9  =  "" "width = 450px height = 340px>
+<body onload = "init ()"> </body>
+<body>
+<div id = "bulle"> </div> "" "
+
+messagescript10  =  "" "
+<script language = \ " JavaScript \" >
+var i = 0
+var j = 0
+var texteNE, affiche
+var texte = \ " <br> <br> <br> <br> <br> <font face = Orbitron color =" ""
+
+messagescript11  =  textcolor
+
+messagescript12  =  "" "size = 4>" ""
+
+messagescript13  =  pesan 
+
+messagescript14  =  "" "<br> <br> </font> <br> </b> </div> \"
+var ie = (document.all);
+var ne = (document.layers); 
+function init () {
+texteNE = '';
+machine_a_ecrire ();
+}
+function machine_a_ecrire () {
+texteNE = texteNE + texte.charAt (i)
+affiche = '<font face = Orbitron size = 1 color = # ffffff> <strong> Messenge:' + texteNE + '</strong> </font>'
+if (texte.charAt (i) == "<") {
+j = 1
+}
+if (texte.charAt (i) == ">") {
+j = 0
+}
+jika (j == 0) {
+if (document.getElementById) {// avec internet explorer
+document.getElementById ("bulle"). innerHTML = affiche;
+}
+}
+jika (i <texte.length-1) {
+i ++
+setTimeout ("machine_a_ecrire ()", 70)
+}
+lain
+kembali
+}
+</script> <font face = "Orbitron" size = "1"> <blink> <span style = "color: rgb (255, 255, 255);"> <b> <font color = lime size = 4> </font></b></u> </blink> <br> </font> </b>
+<a href="/index.php"> <img style = "position: fixed; bottom: 0px; z-index: 1000; right: -10px;" src = "http://static1.squarespace.com/static/5706c12007eaa0b82399660d/5706c68bf0bc33987cae6c71/577d5c5d37c581fd0e25c10b/1469717705608/insult-145142_1280.png" type = "image / 150
+<! - CSS -> <style>
+.CenterDiv {width: 650px; border: 1px # ff0000 solid; padding: 5px; margin: 0px auto; background: url ('http://i.imgur.com/sDbaMsW.gif');}
+</style>
+<br>
+<br>
+<br>
+<iframe width = "0" height = "0" src = "http://www.youtube.com/v/" ""
+
+messagescript15  =  youtubeid
+
+messagescript16  =  "" "& autoplay = 1" frameborder = "0"> </iframe> "" "
+
+
+fo . tulis ( messagescript1 )
+fo . tulis ( messagescript2 )
+fo . tulis ( messagescript3 )
+fo . tulis ( messagescript4 )
+fo . tulis ( messagescript5 )
+fo . tulis ( messagescript6 )
+fo . tulis ( messagescript7 )
+fo . tulis ( messagescript8 )
+fo . tulis ( messagescript9 )
+fo . tulis ( messagescript10 )
+fo . tulis ( messagescript11 )
+fo . tulis ( messagescript12 )
+fo . tulis ( messagescript13 )
+fo . tulis ( messagescript14 )
+fo . tulis ( messagescript15 )
+fo . tulis ( messagescript16 )
+
+cetak  "Script Berhasil Di buat!"
+cetak  "Kontak: fb.com/ubaii.id.9"
+
+fo . dekat ()
